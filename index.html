@@ -53,6 +53,8 @@
       margin-top: 113px;
       margin-left: 148px;
     }
+    
+    
 
      .left-drips1 { /* first level of drips*/
       width: 200px;
@@ -111,8 +113,47 @@
       top: 16%;
     }
     
-   
+    .left-drips2 { /* first level of drips*/
+      width: 100px;
+      height: 600px;
+      border-top: 20px red solid;
+/*       border-right: 10px black solid;
+      border-left: 10px black solid; */
+      margin-left: -15px;
+      margin-top: -22px;
+      position: absolute;
+      transform: translate(-50%, 35%) rotate(45deg);
+      background: #fff;
+      /* Filter!!! */
+      filter: blur(10px) contrast(20);
+    }
     
+    .drip5,
+    .drip6 {
+      width: 100px;
+      height: 100px;
+      top: 50%;
+      left: 20%;
+      position: absolute;
+      border-radius: 50%;
+      background: red;
+      transform: rotate(-45deg);
+    }
+    
+     .drip5 {
+      width: 15px;
+      height: 90px;
+      top: -3%; 
+      left: 50%;
+    }
+
+    .drip6 {
+      background: red;
+      width: 18px;
+      height: 20px;
+      left: 70%;
+      top: 5%;
+    }
 /* 
     .obj-1,
     .obj-2 {
@@ -174,9 +215,15 @@
         <div class="drip1"></div>
         <div class="drip2"></div>
         <div class="drip3"></div>
-        <div class="drip4">
-        </div>
+        <div class="drip4"></div>
       </div>
+       <div class="left-drips2">     
+        <div class="drip5"></div>
+        <div class="drip6"></div>
+      </div>
+<!--         <div class="drip3"></div>
+        <div class="drip4">
+        </div> -->
     </div>
   </body>
 </html>
