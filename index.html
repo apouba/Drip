@@ -11,14 +11,24 @@
   </head>
 
   <style>
+    #heart {
+      display: block;
+      position: absolute;
+      border: black 2px solid;
+      height: 500px;
+      width: 500px;
+      top: 10%;
+      left: 20%;
+    }
+    
     .leftCircle {
       background-color: red;
       height: 200px;
       width: 200px;
       border-radius: 100px;
       position: fixed; /* or absolute */
-      top: 25%;
-      left: 47%;
+      margin-top: 40px;
+      margin-left: 75px;
     }
     
     .rightCircle {
@@ -27,8 +37,8 @@
       width: 200px;
       border-radius: 100px;
       position: fixed; /* or absolute */
-      top: 25%;
-      left: 33%;
+      margin-top: 40px;
+      margin-left: 220.2px;
     }
     
     .point {
@@ -37,16 +47,20 @@
       width: 200px;
       transform: rotate(45deg);
       position: fixed;
-      top: 34.1%;
-      left: 40%;
+      margin-top: 113px;
+      margin-left: 148px;
     }
+    
     
   </style>
   
   <body>
-    <div class="leftCircle"></div>
-    <div class="rightCircle"></div>
-    <div class="point">
+    <div id="heart">
+      <div class="leftCircle"></div>
+      <div class="rightCircle"></div>
+      <div class="point">
+    </div>
+    
     </div>
   </body>
 </html>
