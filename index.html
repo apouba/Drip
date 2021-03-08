@@ -154,54 +154,55 @@
       left: 70%;
       top: 5%;
     }
-/* 
-    .obj-1,
-    .obj-2 {
+
+    .right-drips1 { /* first level of drips*/
       width: 200px;
-      height: 200px;
-      top: 40%;
-      left: 50%;
+      height: 600px;
+      border-top: 20px red solid;
+/*       border-right: 10px black solid;
+      border-left: 10px black solid; */
+      margin-left: 70px;
+      margin-top: -45px;
+      position: absolute;
+      transform: translate(180%, 35%) rotate(-45deg);
+      background: #fff;
+      /* Filter!!! */
+      filter: blur(10px) contrast(20);
+    }
+    
+    .drip7,
+    .drip8,
+    .drip9 {
+      width: 50px;
+      height: 50px;
+      top: 0%;
+      left: 0%;
       position: absolute;
       border-radius: 50%;
-      background: #000;
-      transform: translate(-50%, -50%);
+      background: red;
+      transform: rotate(45deg);
     }
-
-    .obj-1 {
-      left: 30%;
+    
+    .drip7 {
+/*       background: blue; */
+      top: -4%;
+      left: 70%;
     }
-
-    .obj-2 {
+    
+    .drip8{
       left: 60%;
-    } */
-
-/*     @keyframes ani-1 {
-      0% {
-        left: 30%;
-      }
-
-      50% {
-        left: 50%;
-      }
-
-      100% {
-        left: 30%;
-      }
+      top: 2%;
+      height: 50px;
+      width: 18px;
+    }
+    
+    .drip9 {
+      width: 20px;
+      height: 20px;
+      left: 60%;
+      top: 8%;
     }
 
-    @keyframes ani-2 {
-      0% {
-        left: 70%;
-      }
-
-      50% {
-        left: 50%;
-      }
-
-      100% {
-        left: 70%;
-      }
-    } */
   </style>
 
   <body>
@@ -221,9 +222,11 @@
         <div class="drip5"></div>
         <div class="drip6"></div>
       </div>
-<!--         <div class="drip3"></div>
-        <div class="drip4">
-        </div> -->
+      <div class="right-drips1">
+        <div class="drip7"></div>
+        <div class="drip8"></div>
+        <div class="drip9"></div>
+      </div>
     </div>
   </body>
 </html>
