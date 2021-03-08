@@ -203,6 +203,56 @@
       top: 8%;
     }
 
+    .right-drips2 { /* first level of drips*/
+      width: 100px;
+      height: 600px;
+      border-top: 20px red solid;
+/*       border-right: 10px black solid;
+      border-left: 10px black solid; */
+      margin-left: 270px;
+      margin-top: -13px;
+      position: absolute;
+      transform: translate(180%, 35%) rotate(-45deg);
+      background: #fff;
+      /* Filter!!! */
+      filter: blur(10px) contrast(20);
+    }
+    
+    .drip10,
+    .drip11,
+    .drip12 {
+      width: 50px;
+      height: 50px;
+      top: 0%;
+      left: 0%;
+      position: absolute;
+      border-radius: 50%;
+      background: red;
+      transform: rotate(45deg);
+    }
+    
+    .drip10 {
+      background: blue;
+      left: 60%;
+      height: 20px;
+      width: 25px;
+    }
+    
+    .drip11{
+      background: green;
+      left: 60%;
+      top: 2%;
+      height: 50px;
+      width: 18px;
+    }
+    
+    .drip12 {
+      width: 20px;
+      height: 20px;
+      left: 60%;
+      top: 8%;
+    }
+
   </style>
 
   <body>
@@ -226,6 +276,11 @@
         <div class="drip7"></div>
         <div class="drip8"></div>
         <div class="drip9"></div>
+      </div>
+       <div class="right-drips2">
+        <div class="drip10"></div>
+        <div class="drip11"></div>
+        <div class="drip12"></div>
       </div>
     </div>
   </body>
