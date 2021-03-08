@@ -54,12 +54,12 @@
       margin-left: 148px;
     }
 
-     .stage-wrapper { /* first level of drips*/
+     .left-drips { /* first level of drips*/
       width: 800px;
       height: 600px;
-      border: 10px black solid;
-      top: 20%;
-      left: 25%;
+/*       border: 10px black solid; */
+      margin-left: -65px;
+      margin-top: -26px;
       position: absolute;
       transform: translate(-50%, 35%) rotate(45deg);
       background: #fff;
@@ -88,7 +88,7 @@
     }
 
     .drip2 {
-      width: 15px;
+      width: 17px;
       height: 40px;
       left: 48%;
       top: 3%;
@@ -96,9 +96,34 @@
     
     .drip3 {
       width: 15px;
-      height: 90px;
+      height: 70px;
       left: 52%;
       top: 6%;
+    }
+    
+    .drip4,
+    .drip5 {
+      width: 20px;
+      height: 20px;
+/*       top: 50%;
+      left: 20%; */
+      position: absolute;
+      border-radius: 50%;
+      background: red;
+/*       transform: rotate(-45deg); */
+    }
+    
+    .drip4 {
+      top: 0%;
+      left: 50%;
+      background: blue;
+      transform: rotate(-45deg);
+    }
+    
+    .drip5 {
+      top: 0%;
+      left: 54%;
+      background: green;
     }
     
     
@@ -153,18 +178,19 @@
   </style>
 
   <body>
-    <div class="stage-wrapper">     
-      <div class="drip1"></div>
-<!--       <div class="obj-1"></div>
-      <div class="obj-2"></div> -->
-      <div class="drip2"></div>
-      <div class="drip3"></div>
-    </div>
+   
     
     <div id="heart">
       <div class="leftCircle"></div>
       <div class="rightCircle"></div>
-      <div class="point"></div></div>
-
+      <div class="point"></div>
+      <div class="left-drips">     
+        <div class="drip1"></div>
+        <div class="drip2"></div>
+        <div class="drip3"></div>
+        <div class="drip4"></div>
+        <div class="drip5"></div>
+      </div>
+    </div>
   </body>
 </html>
