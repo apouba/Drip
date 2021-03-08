@@ -58,9 +58,7 @@
       height: 60px;
       width: 10px;
       border-radius: 55px;
-      position: absolute;
-      margin-top: 210px;
-      margin-left: 110px;
+      left: 60%;
     }
 
     .drip2 {
@@ -68,14 +66,27 @@
       height: 60px;
       width: 20px;
       border-radius: 50px;
-      position: absolute;
-      margin-top: 12px;
-      margin-left: -5px;
+      left: 20%;
     }
+    
+     .drip1,
+    .drip2 {
+      width: 200px;
+      height: 200px;
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      border-radius: 50%;
+      background: red;
+/*       transform: translate(-50%, -50%); */
+    }
+
+
 
     .stage-wrapper {
       width: 800px;
       height: 600px;
+      border: 10px black solid;
       top: 50%;
       left: 50%;
       position: absolute;
@@ -136,19 +147,18 @@
 
   <body>
     <div class="stage-wrapper">
+      <div class="drip1"></div>
       <div class="obj-1"></div>
       <div class="obj-2"></div>
+<!--       <div class="drip1"></div> -->
+      <div class="drip2"></div>
     </div>
     
     <div id="heart">
       <div class="leftCircle"></div>
       <div class="rightCircle"></div>
       <div class="point"></div>
-      <div class="drip1">
-        <div class="drip2">
-
-        </div>
-      </div>
+      
     </div>
 
   </body>
